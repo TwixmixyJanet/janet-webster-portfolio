@@ -1,0 +1,18 @@
+/* COLOR SCHEME */
+    /* 
+    Matrix Green #0D0208
+    Dark Green #003B00
+    Alien Green #008F11
+    Neon Green #00FF41
+    */
+* {
+   padding: 0;
+   margin: 0;
+}
+
+:root {
+    --matrix-green: #0D0208;
+    --dark-green: #003B00;
+    --alien-green: #008F11;
+    --neon-green: #00FF41;
+}
