@@ -15,4 +15,19 @@
     --dark-green: #003B00;
     --alien-green: #008F11;
     --neon-green: #00FF41;
+    --font-color: #e6ffe6;
+}
+
+html {
+    background-image: url(/assets/img/computer-icon-vectorportal-08-light.png);
+    background-size: cover;
+    background-color: var(--matrix-green);
+}
+
+body {
+    color: var(--font-color);
+}
+
+i {
+    color: var(--neon-green);
 }
