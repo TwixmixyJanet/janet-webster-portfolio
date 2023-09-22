@@ -27,7 +27,7 @@ html {
     /* Computer Icon Free Use License */
     /* Image by Vectorportal.com, CC BY:https://creativecommons.org/licenses/by/4.0/ */
     background-image: url(/assets/img/computer-icon-vectorportal-08-light.png);
-    background-size: cover;
+    background-size: contain;
     background-color: var(--matrix-green);
 }
 
