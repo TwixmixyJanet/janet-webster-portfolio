@@ -8,11 +8,28 @@
 
 /* NOTES FOR IDEAS */
     /* 
-    Need to use some :hover effects on buttons and imagery
+    💡Need to use some :hover effects on buttons and imagery
+    💡10-flexbox-wireframe - reference for flexbox settings
+    💡Robot icon rotate or change color
+    💡04-css-pseudoclasses - reference for fun actions
     */
+/* \/ Replicating best practices for removing white spaces and creating smooth scrolling \/ */
+*,
+*::after,
+*::before {
+    /* This ensures that there is no whitespace surrounding our content. Comment this out or delete it, and you may see some unwelcome whitespace 😖. The * means everything. the ::after and ::before are pseudo elements, we'll cover these later in class */
+    margin: 0;
+    padding: 0;
+    
+    /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page */
+    scroll-behavior: smooth;
+}
+/* ^ DO NOT TOUCH, it make the website all nicey-nice^ */
+
+
 * {
-   padding: 0;
-   margin: 0;
+    /* red-lining used to better see elements visually */
+   border: red solid 1px; 
 }
 
 :root {
@@ -29,6 +46,7 @@ html {
     background-image: url(/assets/img/computer-icon-vectorportal-08-light.png);
     background-size: contain;
     background-color: var(--matrix-green);
+
 }
 
 body {
