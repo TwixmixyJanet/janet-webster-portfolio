@@ -34,9 +34,9 @@ I had a rough idea of how I wanted to engage my selectors based off of previousl
 ![image of hyperlinked project](assets/img/requirement3.png "4. Work projects linked")
 5. First project is emphasized<br />
 ![image of first project being larger than others](assets/img/requirement4.png "5. First project is emphasized")
-6. Site is responsive
+6. Site is responsive<br />
 ![image of full screen](assets/img/requirement5a.png "6. Site is responsive")
 ![image of mid-screen](assets/img/requirement5b.png "6. Site is responsive")
 ![image of mobile](assets/img/requirement5c.png "6. Site is responsive")
-7. Code reviewed
+7. Code reviewed<br />
 ![image of wave.webaim.org displaying website passes standards](assets/img/acessibility-test.png)
