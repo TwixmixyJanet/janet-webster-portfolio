@@ -17,19 +17,20 @@
 *,
 *::after,
 *::before {
-    /* This ensures that there is no whitespace surrounding our content. Comment this out or delete it, and you may see some unwelcome whitespace 😖. The * means everything. the ::after and ::before are pseudo elements, we'll cover these later in class */
+    /* This ensures that there is no whitespace surrounding our content. */
     margin: 0;
     padding: 0;
     
     /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page */
     scroll-behavior: smooth;
 }
-/* ^ DO NOT TOUCH, it make the website all nicey-nice^ */
+/* ^ DO NOT TOUCH, it makes the website all nicey-nice^ */
 
 
 * {
     /* red-lining used to better see elements visually */
    border: red solid 1px; 
+   font-size: 1em;
 }
 
 :root {
@@ -38,6 +39,10 @@
     --alien-green: #008F11;
     --neon-green: #00FF41;
     --font-color: #e6ffe6;
+    --fav-font: 'Courier New', Courier, monospace;
+    --neon-purple: #BC13FE;
+    --secondary-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --reader-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -55,4 +60,116 @@ body {
 
 i {
     color: var(--neon-green);
+
+}
+
+.fa-robot {
+    font-size: 6.6em;
+    margin: 5px;
+}
+
+a {
+    color: var(--font-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+}
+
+li {
+    list-style-type: none;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* font-weight: bolder; */
+    font-size: 2em;
+    padding: 30px 0;
+}
+
+#nav-list li {
+    margin: 5px 10px;
+}
+
+#nav-list a:hover {
+    color: var(--neon-purple)
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0 160px 10px;
+    background-color: var(--dark-green);
+    border-top: 15px solid var(--neon-green);
+}
+
+.intro h1,h2 {
+    font-family: var(--fav-font);
+    font-weight: normal;
+}
+
+.intro p {
+    display: none;
+    /* add a fun show.hide thing here via hover or clicking on the robot?? */
+}
+
+h1 {
+    font-size: 2.54em;
+    padding: 10px;
+    border-bottom: 15px solid var(--neon-green);
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 1px dotted var(--neon-green);
+}
+
+.intro h2 {
+    font-size: 1em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.about h3 {
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+p {
+    font-family: var(--reader-font);
+    line-height: 1.5em;
+}
+
+.bio-info {
+    padding: 20px 0;
+}
+
+.headshot-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.headshot {
+    width: 300px;
+    border-radius: 20px;
 }
