@@ -376,7 +376,7 @@ footer .copyright {
     } */
      
     #card1 img {
-        flex: 5 0 90%;
+        flex: 5 0 100%;
         width: 100%;
         max-width: 1000px;
         min-width: 350px;
