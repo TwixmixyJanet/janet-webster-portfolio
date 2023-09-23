@@ -222,7 +222,7 @@ p {
     padding: 0 0 20px 20px;
 }
 
-.work-card h4 {
+.work-card h3 {
     position: relative;
     bottom: -144px;
     left: 4px;
@@ -232,8 +232,9 @@ p {
     width: 300px;
 }
 
-.work-card h4:hover {
+.work-card h3:hover {
     background-color: var(--neon-purple);
+    color: var(--matrix-green);
 }
 
 .work-card img:hover {
