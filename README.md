@@ -23,3 +23,20 @@ I had a rough idea of how I wanted to engage my selectors based off of previousl
 * Created :root variants to have base colors and fonts to call upon
 * Styled the website from a mobile-focus first, then added media queries to set min-width for tablet and desktop
 * Point of struggle was getting the .work elements to function how I want them to
+
+### Delivery
+1. Website Deployed: https://twixmixyjanet.github.io/janet-webster-portfolio/
+2. Critical details included
+![image of navigation](assets/img/requirement1.png "2. Critical details included")
+3. Active navigation applied
+![image of same page navigation links](assets/img/requirement2.png "3. Active navigation applied")
+4. Work projects linked
+![image]()
+5. First project is emphasized
+![image]()
+6. Site is responsive
+![image]()
+![image]()
+![image]()
+7. Code reviewed
+![image]()
