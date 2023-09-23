@@ -170,7 +170,7 @@ p {
 .headshot-container {
     display: flex;
     justify-content: center;
-  }
+}
 
 .headshot {
     width: 300px;
@@ -182,12 +182,12 @@ p {
     background-color: var(--dark-green);
     color:rgb(240, 248, 255);
 
-  }
+}
 
 .skills h3 {
     font-family: var(--secondary-font);
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     padding: 20px;
 }
@@ -197,7 +197,7 @@ p {
    justify-content: space-evenly;
    width: 100%;
    flex-flow: row wrap;
-  }
+}
 
 .skill, .tech {
    text-transform: uppercase;
@@ -209,8 +209,91 @@ p {
    width: 250px;
    max-width: 250px;
    text-align: center;
-  }
+}
 
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-card {
+    padding: 0 0 20px 20px;
+}
+
+.work-card h4 {
+    position: relative;
+    bottom: -135px;
+    left: 30px;
+    padding: 10px;
+    font-family: var(--fav-font);
+    background-color: var(--alien-green);
+    width: 300px;
+}
+
+.work-card h4:hover {
+    background-color: var(--neon-purple);
+}
+
+.work-card img:hover {
+    border: 4px ridge var(--neon-purple);
+}
+
+.work-card img {
+    border: 4px solid var(--alien-green);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+
+footer {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+}
+
+address {
+    margin: 10px 0;
+    text-align: center;
+}
+
+footer h2 {
+    width: 200px;
+}
+
+.social {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 10px;
+}
+
+.icon {
+    justify-content: space-between;
+    margin: 10px;
+}
+  
+footer .social-icons i {
+    font-size: 2em;
+}
+  
+footer .copyright {
+    text-align: center;
+    padding-bottom: 10px;
+}
 
 @media (min-width: 640px) {
     /* need to change flex-direction on everything from column to row */
