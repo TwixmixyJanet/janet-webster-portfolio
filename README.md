@@ -26,17 +26,17 @@ I had a rough idea of how I wanted to engage my selectors based off of previousl
 
 ### Delivery
 1. Website Deployed: https://twixmixyjanet.github.io/janet-webster-portfolio/
-2. Critical details included
+2. Critical details included<br />
 ![image of navigation](assets/img/requirement1.png "2. Critical details included")
-3. Active navigation applied
+3. Active navigation applied<br />
 ![image of same page navigation links](assets/img/requirement2.png "3. Active navigation applied")
-4. Work projects linked
-![image]()
-5. First project is emphasized
-![image]()
+4. Work projects linked<br />
+![image of hyperlinked project](assets/img/requirement3.png "4. Work projects linked")
+5. First project is emphasized<br />
+![image of first project being larger than others](assets/img/requirement4.png "5. First project is emphasized")
 6. Site is responsive
-![image]()
-![image]()
-![image]()
+![image of full screen](assets/img/requirement5a.png "6. Site is responsive")
+![image of mid-screen](assets/img/requirement5b.png "6. Site is responsive")
+![image of mobile](assets/img/requirement5b.png "6. Site is responsive")
 7. Code reviewed
-![image]()
+![image of wave.webaim.org displaying website passes standards](assets/img/acessibility-test.png)
