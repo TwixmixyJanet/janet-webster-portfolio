@@ -1,6 +1,14 @@
 # JANET WEBSTER'S PORTFOLIO
 
-## Project Process:
+## Table of Contents
+
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+## Description:
 
 ### Action Plan
 1. Create and deploy portfolio that demonstrates work and skills
@@ -40,3 +48,21 @@ I had a rough idea of how I wanted to engage my selectors based off of previousl
 ![image of mobile](assets/img/requirement5c.png "6. Site is responsive")
 7. Code reviewed<br />
 ![image of wave.webaim.org displaying website passes standards](assets/img/acessibility-test.png)
+
+## Installation
+
+1. Create a new repository on GitHub, to store this project.
+2. Clone the repository to your computer.
+3. Copy files to your own repository.
+4. Make changes to the code.
+5. Commit the changes to the local repo.
+6. Push the changes to the remote repo.
+
+## Usage
+
+This one page website portfolio can be used as a base template. Simply swap out information, work, skills, and contact you may need for it to match your requirements.
+
+## License
+
+MIT License
+Copyright (c) 2023 Twixmixy / Janet Webster
