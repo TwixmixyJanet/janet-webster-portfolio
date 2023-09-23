@@ -79,6 +79,13 @@ li {
     list-style-type: none;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #nav-list {
     display: flex;
     flex-direction: column;
@@ -95,13 +102,6 @@ li {
 
 #nav-list a:hover {
     color: var(--neon-purple)
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .intro {
@@ -122,6 +122,7 @@ header {
     display: none;
     /* add a fun show.hide thing here via hover or clicking on the robot?? */
 }
+/* maybe have something display when the screen is larger */
 
 h1 {
     font-size: 2.54em;
@@ -222,8 +223,8 @@ p {
 
 .work-card h4 {
     position: relative;
-    bottom: -135px;
-    left: 30px;
+    bottom: -144px;
+    left: 4px;
     padding: 10px;
     font-family: var(--fav-font);
     background-color: var(--alien-green);
@@ -242,9 +243,10 @@ p {
     border: 4px solid var(--alien-green);
     width: 100%;
     max-width: 400px;
+    min-width: 350px;
 }
 
-
+/* need to finish work section */
 
 
 footer {
@@ -297,6 +299,22 @@ footer .copyright {
 
 @media (min-width: 640px) {
     /* need to change flex-direction on everything from column to row */
+    #nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* font-weight: bolder; */
+        font-size: 1.7em;
+        padding: 30px 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1024px) {
