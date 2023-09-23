@@ -118,6 +118,25 @@ header {
     font-weight: normal;
 }
 
+.in-training {
+    position: relative;
+    cursor: grab;
+}
+
+.in-training:hover::after {
+    content: "...in training 👀";
+    position: absolute;
+    left: 0px;
+    top: 34px;
+    border: 2px solid var(--matrix-green);
+    border-radius: 15px;
+    background-color: var(--neon-purple);
+    padding: 7px;
+    font-size: .8em;
+    /* z-index is placing it in the foreground */
+    z-index: 1;
+}
+
 .hidden-code {
     display: none;
     /* add a fun show.hide thing here via hover or clicking on the robot?? */
