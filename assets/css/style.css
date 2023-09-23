@@ -135,6 +135,7 @@ h2 {
     text-transform: uppercase;
     padding: 10px;
     border-bottom: 1px dotted var(--neon-green);
+    border-top: 5px solid var(--neon-green);
 }
 
 .intro h2 {
@@ -144,8 +145,6 @@ h2 {
 .about {
     display: flex;
     flex-direction: column;
-
-    padding: 20px;
 }
 
 .about h3 {
@@ -153,6 +152,10 @@ h2 {
     font-size: 2em;
     font-weight: normal;
     padding: 20px 0;
+}
+
+.info {
+    padding: 0 20px;
 }
 
 p {
@@ -172,4 +175,47 @@ p {
 .headshot {
     width: 300px;
     border-radius: 20px;
+    margin: 30px;
+}
+
+.skills {
+    background-color: var(--dark-green);
+    color:rgb(240, 248, 255);
+
+  }
+
+.skills h3 {
+    font-family: var(--secondary-font);
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+}
+
+.devskills, .techskills {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   flex-flow: row wrap;
+  }
+
+.skill, .tech {
+   text-transform: uppercase;
+   background-color: var(--matrix-green);
+   border-radius: 20px;
+   color:var(--font-color);
+   margin: 20px;
+   padding: 15px 0;
+   width: 250px;
+   max-width: 250px;
+   text-align: center;
+  }
+
+
+@media (min-width: 640px) {
+    /* need to change flex-direction on everything from column to row */
+}
+
+@media (min-width: 1024px) {
+   /* what more needs to expand at full view? */
 }
