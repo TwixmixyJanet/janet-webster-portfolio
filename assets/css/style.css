@@ -29,7 +29,7 @@
 
 * {
     /* red-lining used to better see elements visually */
-   /* border: red solid 1px;  */
+   /* border: red solid 1px;   */
    /* base font size to decrease/increase based off of */
    font-size: 1em;
 }
@@ -118,9 +118,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 0 160px 10px;
+    padding: 50px 0 160px 10px;
     background-color: var(--dark-green);
     border-top: 15px solid var(--neon-green);
+    position: relative;
 }
 
 .intro h1,h2 {
@@ -170,7 +171,7 @@ h2 {
     font-size: 2.2em;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 40px 0px;
     border-bottom: 1px dotted var(--neon-green);
     border-top: 5px solid var(--neon-green);
 }
@@ -224,7 +225,7 @@ p {
 }
 
 .skills {
-/* set the background color for the section and overall font color */
+    /* set the background color for the section and overall font color */
     background-color: var(--dark-green);
     color: var(--font-color);
 }
@@ -243,7 +244,6 @@ p {
    display: flex;
    flex-flow: row wrap;
    justify-content: space-evenly;
-   /* width: 100%; */
 }
 
 .skill, .tech {
@@ -259,45 +259,73 @@ p {
    text-align: center;
 }
 
-.work {
+.work-container {
+    /* Turning work section container into flex column and aligning elements within */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.work h2 {
+    /* setting the full width of the work section header title */
+    width: 100%;
+
+}
+
 .work-card {
-    padding: 0 0 20px 20px;
+    /* padding: 0 0 20px 20px; */
     /* height: auto;
     width: auto; 
     padding: 62px 50px;
     border: 4px solid var(--alien-green); */
+    border: blue solid 1px; 
+    /* display: flex;
+    flex-direction: column; */
+    width:100%;
+    position: relative;
+}
+
+.project-screenshot {
+    width: 100%;
+}
+.project-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
+}
+#card1{
+    width:100%;
 }
 
 .work-card h3 {
-    position: relative;
-    bottom: -144px;
+    position:absolute;
+    bottom: 20px;
     left: 4px;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: var(--fav-font);
     background-color: var(--alien-green);
-    width: 300px;
+    width:60%;
+    padding:2%;
 }
 
 /* \/ CODE FOR IMAGES WITHIN HTML \/ */
 .work-card h3:hover {
-    background-color: var(--neon-purple);
-    color: var(--matrix-green);
+    /* changing project titles colors when hovering */
+    /* background-color: var(--neon-purple);
+    color: var(--matrix-green); */
 }
 
 .work-card img:hover {
-    border: 4px ridge var(--neon-purple);
+    /* change project image borders when hovering */
+    /* border: 4px ridge var(--neon-purple); */
 }
 
 .work-card img {
-    border: 4px solid var(--alien-green);
+    /* styling border and dimensions of project images */
+    /* border: 4px solid var(--alien-green);
     width: 100%;
     max-width: 400px;
-    min-width: 350px;
+    min-width: 350px; */
 }
 /* ^ CODE FOR IMAGES WITHIN HTML ^ */
 
@@ -314,7 +342,7 @@ p {
 
 /* ^CODE FOR IMAGES WITHIN CSS^ */
 
-/* Pop up info specifically meant for this project */
+/* Pop up info specifically meant for [card1] project */
 span[card1-descr] {
     /* changing up the cursor when hovering over special span and setting the location */
     position: relative;
@@ -335,6 +363,7 @@ span[card1-descr]:hover::after {
     /* z-index is placing it in the foreground */
     z-index: 1;
 }
+/* ^Pop up info specifically meant for this project^ */
 
 
 footer {
@@ -443,7 +472,7 @@ footer .copyright {
         flex-basis: 100%;
     }
 
-    .work {
+    .project-list {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -452,16 +481,18 @@ footer .copyright {
      }
      
     .work-card {
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
-
+    .work-card{
+        width:45%;
+    }
     /* .work-card img {
         width: 100%;
         max-width: 1000px;
         min-width: 350px;
     } */
      
-    #card1 img {
+    /* #card1 img {
         flex: 5 0 100%;
         width: 100%;
         max-width: 1000px;
@@ -494,8 +525,8 @@ footer .copyright {
         width: 100%;
         max-width: 500px;
         min-width: 350px;
-    }
-}
+    } */
+} 
 
 @media (min-width: 1024px) {
    /* what more needs to expand at full view? */
