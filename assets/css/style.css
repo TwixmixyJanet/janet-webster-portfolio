@@ -34,6 +34,11 @@
    font-size: 1em;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~          BASE SETTINGS          ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~   Site designed from Mobile -> 640px -> 1024px   ~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 :root {
     /* Setting all my base variables for colors and fonts on the website */
     --matrix-green: #0D0208;
@@ -60,6 +65,10 @@ body {
     /* referencing base variable color */
     color: var(--font-color);
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~              HEADER              ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 i {
     color: var(--neon-green);
@@ -111,6 +120,10 @@ header {
     /* make the links pop when hovered over! */
     color: var(--neon-purple)
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~              INTRO              ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .intro {
     /* Setting flex column for the intro area and giving it some color variance to break up the page
@@ -181,6 +194,10 @@ h2 {
     font-size: 1em;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~              ABOUT              ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .about {
     /* mobile view set to be flex column */
     display: flex;
@@ -224,6 +241,10 @@ p {
     margin: 30px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~              SKILLS              ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .skills {
     /* set the background color for the section and overall font color */
     background-color: var(--dark-green);
@@ -258,6 +279,10 @@ p {
    max-width: 250px;
    text-align: center;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~         WORK / PROJECTS         ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .work-container {
     /* Turning work section container into flex column and aligning elements within */
@@ -298,47 +323,25 @@ p {
 
 .work-card h3 {
     position:absolute;
-    bottom: 15px;
-    left: 7px;
+    bottom: 17px;
+    left: 9px;
     font-family: var(--fav-font);
     background-color: var(--alien-green);
     width:60%;
     padding:2%;
 }
 
-/* \/ CODE FOR IMAGES WITHIN HTML \/ */
 .work-card h3:hover {
     /* changing project titles colors when hovering */
-    /* background-color: var(--neon-purple);
-    color: var(--matrix-green); */
+    background-color: var(--neon-purple);
+    color: var(--matrix-green);
 }
 
 .work-card img:hover {
     /* change project image borders when hovering */
-    /* border: 4px ridge var(--neon-purple); */
+    border: 4px ridge var(--neon-purple);
 }
 
-.work-card img {
-    /* styling border and dimensions of project images */
-    /* border: 4px solid var(--alien-green);
-    width: 100%;
-    max-width: 400px;
-    min-width: 350px; */
-}
-/* ^ CODE FOR IMAGES WITHIN HTML ^ */
-
-/* CODE FOR IMAGES WITHIN CSS */
-/* .work-card h3:hover {
-    background-color: var(--neon-purple);
-    color: var(--matrix-green);
-}
-#card1 {
-    background-image: url(/assets/img/work-card1.png);
-    background-size: contain;
-} */
-
-
-/* ^CODE FOR IMAGES WITHIN CSS^ */
 
 /* Pop up info specifically meant for [card1] project */
 span[card1-descr] {
@@ -352,7 +355,7 @@ span[card1-descr]:hover::after {
     content: attr(card1-descr);
     position: absolute;
     left: 0px;
-    top: 34px;
+    bottom: 100%;
     border: 2px solid var(--matrix-green);
     border-radius: 15px;
     background-color: var(--neon-purple);
@@ -361,8 +364,103 @@ span[card1-descr]:hover::after {
     /* z-index is placing it in the foreground */
     z-index: 1;
 }
-/* ^Pop up info specifically meant for this project^ */
+/* ^Pop up info specifically meant for [card1] project^ */
 
+/* Pop up info specifically meant for [card2] project */
+span[card2-descr] {
+    /* changing up the cursor when hovering over special span and setting the location */
+    position: relative;
+    cursor: help;
+}
+
+/* using the custom description method to apply tooltip style info on the project */
+span[card2-descr]:hover::after {
+    content: attr(card2-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    border: 2px solid var(--matrix-green);
+    border-radius: 15px;
+    background-color: var(--neon-purple);
+    padding: 7px;
+    font-size: .8em;
+    /* z-index is placing it in the foreground */
+    z-index: 1;
+}
+/* ^Pop up info specifically meant for [card2] project^ */
+
+/* Pop up info specifically meant for [card3] project */
+span[card3-descr] {
+    /* changing up the cursor when hovering over special span and setting the location */
+    position: relative;
+    cursor: help;
+}
+
+/* using the custom description method to apply tooltip style info on the project */
+span[card3-descr]:hover::after {
+    content: attr(card3-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    border: 2px solid var(--matrix-green);
+    border-radius: 15px;
+    background-color: var(--neon-purple);
+    padding: 7px;
+    font-size: .8em;
+    /* z-index is placing it in the foreground */
+    z-index: 1;
+}
+/* ^Pop up info specifically meant for [card3] project^ */
+
+/* Pop up info specifically meant for [card4] project */
+span[card4-descr] {
+    /* changing up the cursor when hovering over special span and setting the location */
+    position: relative;
+    cursor: help;
+}
+
+/* using the custom description method to apply tooltip style info on the project */
+span[card4-descr]:hover::after {
+    content: attr(card4-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    border: 2px solid var(--matrix-green);
+    border-radius: 15px;
+    background-color: var(--neon-purple);
+    padding: 7px;
+    font-size: .8em;
+    /* z-index is placing it in the foreground */
+    z-index: 1;
+}
+/* ^Pop up info specifically meant for [card4] project^ */
+
+/* Pop up info specifically meant for [card5] project */
+span[card5-descr] {
+    /* changing up the cursor when hovering over special span and setting the location */
+    position: relative;
+    cursor: help;
+}
+
+/* using the custom description method to apply tooltip style info on the project */
+span[card5-descr]:hover::after {
+    content: attr(card5-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    border: 2px solid var(--matrix-green);
+    border-radius: 15px;
+    background-color: var(--neon-purple);
+    padding: 7px;
+    font-size: .8em;
+    /* z-index is placing it in the foreground */
+    z-index: 1;
+}
+/* ^Pop up info specifically meant for [card5] project^ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~              FOOTER              ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer {
     padding: 0 0 20px 0;
@@ -411,7 +509,16 @@ footer .copyright {
     padding-bottom: 10px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ~~~~~~~~~~~~~~~~          MEDIA QUERIES          ~~~~~~~~~~~~~~~~ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 @media (min-width: 640px) {
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ~~~~~~~~~~~~~~~~       640px HEADER        ~~~~~~~~~~~~~~~~ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     /* need to change flex-direction on everything from column to row */
     .fa-robot {
         margin: 15px;
@@ -432,6 +539,10 @@ footer .copyright {
         align-items: center;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ~~~~~~~~~~~~~~~~       640px INTRO        ~~~~~~~~~~~~~~~~ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     .hidden-code {
         display: flex;
         flex-direction: column;
@@ -446,6 +557,10 @@ footer .copyright {
     .hidden-code i {
         font-size: 1.7em;
     }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ~~~~~~~~~~~~~~~~       640px ABOUT        ~~~~~~~~~~~~~~~~ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .about {
         flex-direction: row;
@@ -465,6 +580,10 @@ footer .copyright {
         height: fit-content;
     }
 
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ~~~~~~~~~~~~~~~~   640px WORK / PROJECTS    ~~~~~~~~~~~~~~~~ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
     .work h2 {
         flex-basis: 100%;
     }
@@ -477,63 +596,25 @@ footer .copyright {
         margin-bottom: 50px;
      }
      
-    .work-card {
-        /* padding: 0 20px; */
-    }
     .work-card{
         width:45%;
     }
-    /* .work-card img {
-        width: 100%;
-        max-width: 1000px;
-        min-width: 350px;
-    } */
-     
-    /* #card1 img {
-        flex: 5 0 100%;
-        width: 100%;
-        max-width: 1000px;
-        min-width: 350px;
-    }
-
-    #card2 img {
-        flex: 1 0 50%;
-        width: 100%;
-        max-width: 500px;
-        min-width: 350px;
-    }
-
-    #card3 img {
-        flex: 1 0 50%;
-        width: 100%;
-        max-width: 500px;
-        min-width: 350px;
-    }
-
-    #card4 img {
-        flex: 1 0 50%;
-        width: 100%;
-        max-width: 500px;
-        min-width: 350px;
-    }
-
-    #card5 img {
-        flex: 1 0 50%;
-        width: 100%;
-        max-width: 500px;
-        min-width: 350px;
-    } */
 } 
 
 @media (min-width: 1024px) {
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    /* ~~~~~~~~~~~~~~~~       1024px HEADER        ~~~~~~~~~~~~~~~~ */
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
    /* what more needs to expand at full view? */
    #nav-list {
     font-size: 2.5em;
     font-weight: bold;
     padding: 30px;
-}
+    }
 
-#nav-list li {
-    margin: 5px 20px;
-}
+    #nav-list li {
+        margin: 5px 20px;
+    }
 }
