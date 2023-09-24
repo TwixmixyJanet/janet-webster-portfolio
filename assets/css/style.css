@@ -28,7 +28,7 @@
 
 
 * {
-    /* red-lining used to better see elements visually */
+    /* RED-LINING TO SEE ELEMENT BARRIERS */
    /* border: red solid 1px;   */
    /* base font size to decrease/increase based off of */
    font-size: 1em;
@@ -130,7 +130,7 @@ header {
     Adding padding above and below to give space */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 50px 0 160px 10px;
     background-color: var(--dark-green);
     border-top: 15px solid var(--neon-green);
@@ -157,6 +157,8 @@ header {
     position: absolute;
     left: 0px;
     top: 34px;
+    width: 150px;
+    text-align: center;
     /* creating a background bubble, setting colors, rounding edges */
     border: 2px solid var(--matrix-green);
     border-radius: 15px;
@@ -542,6 +544,10 @@ footer .copyright {
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
     /* ~~~~~~~~~~~~~~~~       640px INTRO        ~~~~~~~~~~~~~~~~ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .intro {
+        align-items: flex-start;
+    }
 
     .hidden-code {
         display: flex;
