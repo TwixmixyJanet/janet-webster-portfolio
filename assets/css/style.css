@@ -69,11 +69,12 @@ i {
 .fa-robot {
     /* Font Awesome icon used as logo. Functions as a font, so using font size to increase */
     font-size: 6.6em;
+    /* Giving the robot head some space */
     margin: 5px;
 }
 
 a {
-    /* Base functionality for all links on website */
+    /* Base functionality for all links on website. Setting color, uppercase, taking away the underline, and font family */
     color: var(--font-color);
     text-transform: uppercase;
     text-decoration: none;
@@ -81,19 +82,19 @@ a {
 }
 
 li {
-    /* Removing the underline from the navigation list items */
+    /* Removing the bullets from the navigation list items */
     list-style-type: none;
 }
 
 header {
-    /* Mobile view flex column for logo and navigation */
+    /* Mobile view flex column for logo and navigation, setting alignment */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #nav-list {
-    /* Navigation set to flex column for mobile view */
+    /* Navigation set to flex column for mobile view, increasing font size, adding padding on top and bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +113,8 @@ header {
 }
 
 .intro {
-    /* Setting flex column for the intro area and giving it some color variance to break up the page */
+    /* Setting flex column for the intro area and giving it some color variance to break up the page
+    Adding padding above and below to give space */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -129,15 +131,19 @@ header {
 
 .in-training {
     /* changing up the cursor when hovering over special span and setting the location */
+    /* Any time "Full Stack MERN Software Enginner" is listed, the cursor changes accordingly. */
     position: relative;
     cursor: pointer;
 }
 
 .in-training:hover::after {
+     /* Any time "Full Stack MERN Software Enginner" is listed, the message in training appears. */
     content: "...in training 👀";
+    /* positioning text bubble to appear immediately below the statement */
     position: absolute;
     left: 0px;
     top: 34px;
+    /* creating a background bubble, setting colors, rounding edges */
     border: 2px solid var(--matrix-green);
     border-radius: 15px;
     background-color: var(--neon-purple);
@@ -148,18 +154,19 @@ header {
 }
 
 .hidden-code {
+    /* hidden on mobile view */
     display: none;
-    /* add a fun show.hide thing here via hover or clicking on the robot?? */
 }
-/* maybe have something display when the screen is larger */
 
 h1 {
+    /* Increasing size, giving space, and creating a distinguishing border for name */
     font-size: 2.54em;
     padding: 10px;
     border-bottom: 15px solid var(--neon-green);
 }
 
 h2 {
+    /* Settings overall for any H2 */
     font-size: 2.2em;
     text-align: center;
     text-transform: uppercase;
@@ -169,15 +176,18 @@ h2 {
 }
 
 .intro h2 {
+    /* adjusting intro's H2 font size to be smaller */
     font-size: 1em;
 }
 
 .about {
+    /* mobile view set to be flex column */
     display: flex;
     flex-direction: column;
 }
 
 .about h3 {
+    /* Greeting specific font set, incease size, decrease weight, give padding to top and bottom */
     font-family: var(--secondary-font);
     font-size: 2em;
     font-weight: normal;
@@ -185,36 +195,42 @@ h2 {
 }
 
 .info {
+    /* info in about section given some padding on the sides */
     padding: 0 20px;
 }
 
 p {
+    /* reader font set and increase line height */
     font-family: var(--reader-font);
     line-height: 1.5em;
 }
 
 .bio-info {
+    /* bio info in about area given some padding between elements */
     padding: 20px 0;
 }
 
 .headshot-container {
+    /* image container flex and centered */
     display: flex;
     justify-content: center;
 }
 
 .headshot {
+    /* shrank image to be more suitable, added rounded corners, and gave space via margin */
     width: 300px;
     border-radius: 20px;
     margin: 30px;
 }
 
 .skills {
+/* set the background color for the section and overall font color */
     background-color: var(--dark-green);
-    color:rgb(240, 248, 255);
-
+    color: var(--font-color);
 }
 
 .skills h3 {
+    /* sub-headers for the section, set font styles, centered and added some all around padding */
     font-family: var(--secondary-font);
     font-weight: normal;
     font-size: 1.4em;
@@ -223,13 +239,15 @@ p {
 }
 
 .devskills, .techskills {
+    /* Set both divs within skill section to flex, wrap, and space evenly */
    display: flex;
-   justify-content: space-evenly;
-   width: 100%;
    flex-flow: row wrap;
+   justify-content: space-evenly;
+   /* width: 100%; */
 }
 
 .skill, .tech {
+    /* set each skill/stack to be uniform in uppercase, background bubble, rounded corners, same colors, with padding/margin, alignment and necessary width */
    text-transform: uppercase;
    background-color: var(--matrix-green);
    border-radius: 20px;
@@ -249,6 +267,10 @@ p {
 
 .work-card {
     padding: 0 0 20px 20px;
+    /* height: auto;
+    width: auto; 
+    padding: 62px 50px;
+    border: 4px solid var(--alien-green); */
 }
 
 .work-card h3 {
@@ -261,6 +283,7 @@ p {
     width: 300px;
 }
 
+/* \/ CODE FOR IMAGES WITHIN HTML \/ */
 .work-card h3:hover {
     background-color: var(--neon-purple);
     color: var(--matrix-green);
@@ -276,6 +299,20 @@ p {
     max-width: 400px;
     min-width: 350px;
 }
+/* ^ CODE FOR IMAGES WITHIN HTML ^ */
+
+/* CODE FOR IMAGES WITHIN CSS */
+/* .work-card h3:hover {
+    background-color: var(--neon-purple);
+    color: var(--matrix-green);
+}
+#card1 {
+    background-image: url(/assets/img/work-card1.png);
+    background-size: contain;
+} */
+
+
+/* ^CODE FOR IMAGES WITHIN CSS^ */
 
 /* Pop up info specifically meant for this project */
 span[card1-descr] {
