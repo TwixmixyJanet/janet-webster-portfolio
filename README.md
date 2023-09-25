@@ -78,7 +78,7 @@ Copyright (c) 2023 Twixmixy / Janet Webster
 <hr />
 
 ## About The Author
-# Janet Webster
+### Janet Webster
 Full Stack MERN Software Engineer in training.
 
 - [GitHub](https://github.com/TwixmixyJanet/)
