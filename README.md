@@ -1,11 +1,12 @@
 # JANET WEBSTER'S PORTFOLIO
-[View Project Here](https://twixmixyjanet.github.io/janet-webster-portfolio/ "Janet Webster's Portfolio")
+<p>[View Project Here](https://twixmixyjanet.github.io/janet-webster-portfolio/ "Janet Webster's Portfolio")</p>
 ![image of portfolio](assets/img/projectimage.png "image of Janet Webster's Portfolio - mobile view")
 | Technology Used    | Resource URL |
 | --------  | ------- |
-| HTML      | https://developer.mozilla.org/en-US/docs/Web/HTML|
-| CSS       | https://developer.mozilla.org/en-US/docs/Web/CSS|
-| Git       | https://git-scm.com/|
+| HTML      | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS       | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| Git       | https://git-scm.com/ |
+| VSCode    | https://code.visualstudio.com/ |
 
 ## Table of Contents
 
@@ -73,3 +74,16 @@ This one page website portfolio can be used as a base template. Simply swap out 
 
 MIT License
 Copyright (c) 2023 Twixmixy / Janet Webster
+
+<hr />
+
+## About The Author
+# Janet Webster
+<p>Full Stack MERN Software Engineer in training.</p>
+
+- [GitHub](https://github.com/TwixmixyJanet/)
+- [LinkedIn](https://www.linkedin.com/in/twixmixy/)
+- [Twitter](https://twitter.com/Twixmixy)
+- [WakaTime](https://wakatime.com/@Twixmixy)
+
+![Janet with her dog Winona on the beach](https://avatars.githubusercontent.com/u/117195025?v=4)
