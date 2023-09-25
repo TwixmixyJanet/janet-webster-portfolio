@@ -7,6 +7,7 @@
 | CSS       | https://developer.mozilla.org/en-US/docs/Web/CSS |
 | Git       | https://git-scm.com/ |
 | VSCode    | https://code.visualstudio.com/ |
+| Web Accessibility Evaluation Tool | https://wave.webaim.org/ |
 
 ## Table of Contents
 
