@@ -62,7 +62,7 @@ body {
         /* Computer Icon Free Use License */
     /* Image by Vectorportal.com, CC BY:https://creativecommons.org/licenses/by/4.0/ */
     background-color: var(--matrix-green);
-    background-image: url(assets/img/computer-icon-vectorportal-08-light.png);
+    background-image: url(/assets/img/computer-icon-vectorportal-08-light.png);
     background-size: contain;
 }
 
