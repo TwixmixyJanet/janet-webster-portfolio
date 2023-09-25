@@ -52,10 +52,6 @@
     --reader-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html {
-
-}
-
 body {
     /* referencing base variable color */
     color: var(--font-color);
