@@ -1,11 +1,3 @@
-/* COLOR SCHEME */
-    /* 
-    Matrix Green #0D0208
-    Dark Green #003B00
-    Alien Green #008F11
-    Neon Green #00FF41
-    */
-
 /* NOTES FOR IDEAS */
     /* 
     💡Need to use some :hover effects on buttons and imagery
@@ -13,6 +5,19 @@
     💡Robot icon rotate or change color
     💡04-css-pseudoclasses - reference for fun actions
     */
+    /* COLOR SCHEME */
+        /* 
+        Matrix Green #0D0208
+        Dark Green #003B00
+        Alien Green #008F11
+        Neon Green #00FF41
+        */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~          BASE SETTINGS          ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~   Site designed from Mobile -> 640px -> 1024px   ~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 /* \/ Replicating best practices for removing white spaces and creating smooth scrolling \/ */
 *,
 *::after,
@@ -34,11 +39,6 @@
    font-size: 1em;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~          BASE SETTINGS          ~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~   Site designed from Mobile -> 640px -> 1024px   ~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 :root {
     /* Setting all my base variables for colors and fonts on the website */
     --matrix-green: #0D0208;
@@ -53,17 +53,17 @@
 }
 
 html {
-    /* Computer Icon Free Use License */
-    /* Image by Vectorportal.com, CC BY:https://creativecommons.org/licenses/by/4.0/ */
-    background-image: url(/assets/img/computer-icon-vectorportal-08-light.png);
-    background-size: contain;
-    background-color: var(--matrix-green);
 
 }
 
 body {
     /* referencing base variable color */
     color: var(--font-color);
+        /* Computer Icon Free Use License */
+    /* Image by Vectorportal.com, CC BY:https://creativecommons.org/licenses/by/4.0/ */
+    background-color: var(--matrix-green);
+    background-image: url(assets/img/computer-icon-vectorportal-08-light.png);
+    background-size: contain;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
