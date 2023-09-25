@@ -1,5 +1,5 @@
 # JANET WEBSTER'S PORTFOLIO
-<p>[View Project Here](https://twixmixyjanet.github.io/janet-webster-portfolio/ "Janet Webster's Portfolio")</p>
+[View Project Here](https://twixmixyjanet.github.io/janet-webster-portfolio/ "Janet Webster's Portfolio")<br />
 ![image of portfolio](assets/img/projectimage.png "image of Janet Webster's Portfolio - mobile view")
 | Technology Used    | Resource URL |
 | --------  | ------- |
@@ -79,7 +79,7 @@ Copyright (c) 2023 Twixmixy / Janet Webster
 
 ## About The Author
 # Janet Webster
-<p>Full Stack MERN Software Engineer in training.</p>
+Full Stack MERN Software Engineer in training.
 
 - [GitHub](https://github.com/TwixmixyJanet/)
 - [LinkedIn](https://www.linkedin.com/in/twixmixy/)
