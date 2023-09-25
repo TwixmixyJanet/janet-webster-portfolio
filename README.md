@@ -1,5 +1,11 @@
 # JANET WEBSTER'S PORTFOLIO
 [View Project Here](https://twixmixyjanet.github.io/janet-webster-portfolio/ "Janet Webster's Portfolio")
+![image of portfolio](assets/img/projectimage.png "image of Janet Webster's Portfolio - mobile view")
+| Technology Used    | Resource URL |
+| --------  | ------- |
+| HTML      | https://developer.mozilla.org/en-US/docs/Web/HTML|
+| CSS       | https://developer.mozilla.org/en-US/docs/Web/CSS|
+| Git       | https://git-scm.com/|
 
 ## Table of Contents
 
