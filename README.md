@@ -28,17 +28,22 @@
 7. Code is reviewed by accessibility tools: https://wave.webaim.org/
 
 ### HTML
-Initiated the project by framing out the HTML with the content that I knew I wanted to include in the project
+Initiated the project by framing out the semantic HTML with the content that I knew I wanted to include in the project
 * Updated HTML as needed during testing of CSS and responsiveness
 * Used semantic elements as much as possible
-* Potential option for refactoring to make some DIV elements surrounding elements I would like to have flex/flow better
+* Utilized a tutoring session to walk through display:flex and element dimensions
+* Refactored to make some DIV elements surrounding elements I needed to have flex/flow better
+* Added comments to various areas for clarity
 
 ### CSS
 I had a rough idea of how I wanted to engage my selectors based off of previously building a portfolio.
 * Started from top to bottom in terms of how the HTML flows
 * Created :root variants to have base colors and fonts to call upon
 * Styled the website from a mobile-focus first, then added media queries to set min-width for tablet and desktop
-* Point of struggle was getting the .work elements to function how I want them to
+* Utilized a tutoring session to walk through display:flex and element dimensions
+* Refactored to optimized the various areas flex/wrap better
+* Reviewed each selector and property/value to make sure it served it's best purpose
+* Consolidated selectors where it made sense to do so
 
 ### Delivery
 1. Website Deployed: https://twixmixyjanet.github.io/janet-webster-portfolio/
