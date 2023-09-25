@@ -1,3 +1,5 @@
+/* A CSS reset wipes out some of the browser's default styling and replaces it with a set of customizable style rules. This ensures that each element will appear the same, regardless of whether they're viewed on Chrome or Firefox. */
+
 * {
   margin: 0;
   padding: 0;
