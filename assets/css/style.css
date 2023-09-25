@@ -59,9 +59,10 @@ html {
 body {
     /* referencing base variable color */
     color: var(--font-color);
+    background-color: var(--matrix-green);
         /* Computer Icon Free Use License */
     /* Image by Vectorportal.com, CC BY:https://creativecommons.org/licenses/by/4.0/ */
-    background-color: var(--matrix-green);
+    /* background image added, however GitHub pages may not display */
     background-image: url(/assets/img/computer.png);
     background-size: contain;
 }
@@ -71,6 +72,7 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 i {
+    /* color of robot icon */
     color: var(--neon-green);
 
 }
@@ -117,7 +119,7 @@ header {
 }
 
 #nav-list a:hover {
-    /* make the links pop when hovered over! */
+    /* make the links purple when hovered over! */
     color: var(--neon-purple)
 }
 
@@ -135,12 +137,6 @@ header {
     background-color: var(--dark-green);
     border-top: 15px solid var(--neon-green);
     position: relative;
-}
-
-.intro h1,h2 {
-    /* Setting font for the intro headers */
-    font-family: var(--fav-font);
-    font-weight: normal;
 }
 
 .in-training {
@@ -179,6 +175,8 @@ h1 {
     font-size: 2.54em;
     padding: 10px;
     border-bottom: 15px solid var(--neon-green);
+    font-family: var(--fav-font);
+    font-weight: normal;
 }
 
 h2 {
@@ -187,8 +185,12 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 40px 0px;
+    /* Adding borders above and below h2 */
     border-bottom: 1px dotted var(--neon-green);
     border-top: 5px solid var(--neon-green);
+    font-family: var(--fav-font);
+    font-weight: normal;
+    width: 100%;
 }
 
 .intro h2 {
@@ -263,7 +265,7 @@ p {
 }
 
 .devskills, .techskills {
-    /* Set both divs within skill section to flex, wrap, and space evenly */
+    /* Set both divs within skill sections to flex, wrap, and space evenly */
    display: flex;
    flex-flow: row wrap;
    justify-content: space-evenly;
@@ -293,42 +295,47 @@ p {
     align-items: center;
 }
 
-.work h2 {
-    /* setting the full width of the work section header title */
-    width: 100%;
-
-}
-
 .work-card {
+    /* Mobile view cards displa full width  */
     width: 100%;
+    /* Setting parent container of project's header to relative */
     position: relative;
+    /* Give these projects some space from each other! */
     padding: 10px 5px;
 }
 
 .project-screenshot {
+    /* Decorating border of project and image to display at full width */
     border: 4px solid var(--alien-green);
     width: 100%;
 }
 .project-list{
+    /* 4-sub projects set flex wrap and give them some space */
     display:flex;
     flex-wrap:wrap;
     gap:2%;
+    margin-bottom: 50px;
 }
 
 #card1{
+    /* Primary project set to be full width */
     width:100%;
 }
 
 #card1 h3 {
+    /* Primary project font size set to grow as the element grows */
     font-size: 3vw;
 }
 
 .work-card h3 {
+    /* header elements set to absolute position based off work-card */
     position:absolute;
     bottom: 17px;
     left: 9px;
+    /* style font and background color of header */
     font-family: var(--fav-font);
     background-color: var(--alien-green);
+    /* set expanding width base off increase in screen size and give some padding */
     width:60%;
     padding:2%;
 }
@@ -338,12 +345,6 @@ p {
     background-color: var(--neon-purple);
     color: var(--matrix-green);
 }
-
-.work-card img:hover {
-    /* change project image borders when hovering */
-    border: 4px ridge var(--neon-purple);
-}
-
 
 /* Pop up info specifically meant for [card1] project */
 span[card1-descr] {
@@ -465,50 +466,49 @@ span[card5-descr]:hover::after {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer {
-    padding: 0 0 20px 0;
+    /* flex column center align all elements in footer */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    /* footer background color */
     background-color: var(--dark-green);
 }
 
 address {
+    /* give some space and center align */
     margin: 10px 0;
     text-align: center;
 }
 
-footer h2 {
-    width: 100%;
-}
-
 .social {
+    /* display flex column for social title and social icons, center align on axis */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
   
 .social-icons {
+    /* social icons flex row with spacing and center alignment */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
     margin: 10px;
 }
 
 .icon {
-    justify-content: space-between;
+    /* space between each icon */
     margin: 10px;
 }
   
 footer .social-icons i {
+    /* Font Awesome - increase font size to make images larger */
     font-size: 2em;
 }
   
 footer .copyright {
+    /* center align text and give some space at the bottom */
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -523,22 +523,23 @@ footer .copyright {
 
     /* need to change flex-direction on everything from column to row */
     .fa-robot {
+        /* giving that robot some more space */
         margin: 15px;
     }
     
     #nav-list {
-        display: flex;
+        /* changing flex direction for wider screen */
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        /* adjusting font size for tablet view */
         font-size: 1.7em;
-        padding: 30px 0;
     }
 
     header {
+        /* changing flex direction for wider screen */
         flex-direction: row;
+        /* get them away from each other */
         justify-content: space-between;
-        align-items: center;
     }
 
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -582,11 +583,6 @@ footer .copyright {
         align-items: center;
     }
 
-    .about h2 {
-        /* Element takes full width and does not sit next to other flex elements */
-        width: 100%;
-    }
-
     .about .info {
         /* Flex so the info and headshot sit next to each other on larger screens */
         flex: 1;
@@ -597,11 +593,9 @@ footer .copyright {
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
     .project-list {
-        flex-direction: row;
-        flex-wrap: wrap;
+        /* center on vertical axis */
         justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
      }
      
     .work-card{
@@ -621,14 +615,15 @@ footer .copyright {
     /* ~~~~~~~~~~~~~~~~       1024px HEADER        ~~~~~~~~~~~~~~~~ */
     /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
-   /* what more needs to expand at full view? */
    #nav-list {
+    /* Increase that font size for full view!! */
     font-size: 2.5em;
     font-weight: bold;
     padding: 30px;
     }
 
     #nav-list li {
+        /* give it more space! */
         margin: 5px 20px;
     }
 }

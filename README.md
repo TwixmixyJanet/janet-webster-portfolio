@@ -44,6 +44,7 @@ I had a rough idea of how I wanted to engage my selectors based off of previousl
 * Refactored to optimized the various areas flex/wrap better
 * Reviewed each selector and property/value to make sure it served it's best purpose
 * Consolidated selectors where it made sense to do so
+* Removed redundant selectors and properties
 
 ### Delivery
 1. Website Deployed: https://twixmixyjanet.github.io/janet-webster-portfolio/
